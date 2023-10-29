@@ -1,7 +1,8 @@
 const emailInputEl = document.getElementById("email");
 const passwordInputEL = document.getElementById("password");
 // const loginBtn = document.getElementsByClassName("login-btn");
-const form = document.getElementById("form");
+const loginFormEl = document.getElementById("form-login");
+const registrationForm = document.getElementById("form-registration")
 
 const FAKE_USER = {
   email: "example@gmail.com",
@@ -10,14 +11,15 @@ const FAKE_USER = {
 
 // console.log(form);
 
-form.addEventListener("submit", function (e) {
+loginFormEl.addEventListener("submit", function (e) {
   e.preventDefault();
   // console.log(typeof emailInputEl.value);
   // console.log(typeof passwordInputEL.value);
 
   if (typeof emailInputEl.value === "string" && typeof FAKE_USER.password === "string") {
     // console.log("logged In");
-    form.style.display = "none";
+    loginFormEl.classList.add('hidden')
+    registrationForm.classList.remove('hidden');
   }
 });
 
