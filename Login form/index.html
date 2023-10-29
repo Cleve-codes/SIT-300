@@ -25,18 +25,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple Login Form</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <div class="wrapper">
-      <div class="form-container">
+      <div class="form-container" id="form">
         <p class="title">Welcome back</p>
         <form class="form">
-          <input type="email" class="input" placeholder="Email" />
-          <input type="password" class="input" placeholder="Password" />
+          <input type="email" class="input" placeholder="Email" id="email" />
+          <input
+            type="password"
+            class="input"
+            placeholder="Password"
+            id="password"
+          />
           <p class="page-link">
             <span class="page-link-label">Forgot Password?</span>
           </p>
-          <button class="form-btn">Log in</button>
+          <button class="form-btn login-btn">Log in</button>
         </form>
         <p class="sign-up-label">
           Don't have an account?<span class="sign-up-link">Sign up</span>
