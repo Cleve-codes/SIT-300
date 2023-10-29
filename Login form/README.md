@@ -1,3 +1,9 @@
 ## SIMPLE LOGIN FORM
 
-This repo contains a simple login form which was a school project and was done as a groupwork.
+This repo contains a simple login form which was a school project.
+
+### Features
+
+- Login and Auth
+- Student Registration
+
