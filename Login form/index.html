@@ -29,7 +29,8 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="form-container" id="form">
+      <!-- Login Form -->
+      <div class="form-container hidden" id="form">
         <p class="title">Welcome back</p>
         <form class="form">
           <input type="email" class="input" placeholder="Email" id="email" />
@@ -105,6 +106,65 @@
           </div>
         </div>
       </div>
+
+      <!-- Student registration -->
+      <div class="hidden">
+        <form class="form" >
+        <p class="title">Register</p>
+        <p class="message">Fill the form below to finish your registration.</p>
+        <div class="flex">
+          <label>
+            <input class="input" type="text" placeholder="" required="" />
+            <span>Firstname</span>
+          </label>
+
+          <label>
+            <input class="input" type="text" placeholder="" required="" />
+            <span>Lastname</span>
+          </label>
+        </div>
+
+        <label>
+          <input class="input" type="email" placeholder="" required="" />
+          <span>Email</span>
+        </label>
+
+        <label>
+          <input class="input" type="text" placeholder="" required="" />
+          <span>Phone Number</span>
+        </label>
+        <label>
+          <select class="input">
+            <option value="default" selected disabled>Gender</option>
+            <option class="gender-opt" value="male">Male</option>
+            <option class="gender-opt value="female">Female</option>
+          </select>
+        </label>
+        <button class="submit">Submit</button>
+        <p class="signin">Already have an acount ? <a href="#">Signin</a></p>
+      </form>
+      </div>
+      
+
+      <!-- Success Page -->
+      
+      <div class="card"> 
+  <button class="dismiss" type="button">×</button> 
+  <div class="header"> 
+    <div class="image">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 7L9.00004 18L3.99994 13" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+      </div> 
+      <div class="content">
+         <span class="title">Registration Succesfull</span> 
+         <p class="message">Thank you for registering as a student at MUT. Your registration is complete, and you are now part of our learning community.</p> 
+         </div> 
+         <div class="actions">
+            <button class="history" type="button">Start Learning</button> 
+            
+            </div> 
+            </div> 
+            </div>
+
     </div>
   </body>
 </html>
